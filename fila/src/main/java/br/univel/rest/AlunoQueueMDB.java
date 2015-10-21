@@ -7,7 +7,7 @@ import javax.jms.MessageListener;
 import javax.jms.ObjectMessage;
 import javax.jms.TextMessage;
  
-import br.com.feltex.academicnet.entidade.Aluno;
+
  
 /**
  * Message-Driven Bean implementation class for: AlunoMDB
