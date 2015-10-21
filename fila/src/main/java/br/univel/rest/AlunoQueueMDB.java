@@ -14,7 +14,7 @@ import br.com.feltex.academicnet.entidade.Aluno;
  */
 @MessageDriven(activationConfig = {
 		@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
-		@ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/queue/alunoQueue") }, mappedName = "java:/queue/alunoQueue")
+		@ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/jms/queue/ExpiryQueue") }, mappedName = "java:/jms/queue/ExpiryQueue")
 public class AlunoQueueMDB implements MessageListener {
  
 	public AlunoQueueMDB() {
