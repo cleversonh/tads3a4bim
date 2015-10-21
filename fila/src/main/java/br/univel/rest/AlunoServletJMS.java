@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 public class AlunoServletJMS extends HttpServlet {
 	private static final long serialVersionUID = 1L;
  
-	@Resource(mappedName = "java:/queue/alunoQueue")
+	@Resource(mappedName = "java:/jms/queue/ExpiryQueue")
 	private Queue fila;
  
 	@Resource(mappedName = "java:/ConnectionFactory")
