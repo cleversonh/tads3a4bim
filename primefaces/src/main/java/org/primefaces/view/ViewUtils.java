@@ -17,18 +17,15 @@ public final class ViewUtils
 
    public static <T> List<T> asList(Collection<T> collection)
    {
-
       if (collection == null)
       {
          return null;
       }
-
       return new ArrayList<T>(collection);
    }
 
    public static String display(Object object)
    {
-
       if (object == null)
       {
          return null;
@@ -36,7 +33,6 @@ public final class ViewUtils
 
       try
       {
-         // Invoke toString if declared in the class. If not found, the NoSuchMethodException is caught and handled
          object.getClass().getDeclaredMethod("toString");
          return object.toString();
       }
