@@ -59,7 +59,7 @@ public class ProdutoBean implements Serializable
    {
       this.id = id;
    }
-
+ 
    private Produto produto;
 
    public Produto getProduto()

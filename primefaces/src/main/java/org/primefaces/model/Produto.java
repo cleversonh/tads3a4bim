@@ -20,7 +20,7 @@ public class Produto implements Serializable
    @Version
    @Column(name = "version")
    private int version;
-
+ 
    private String nome;
 
    @Column
